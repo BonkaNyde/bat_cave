@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+wtforms-alchemy = "*"
+flask-login = "*"
+flask-babel = "*"
+celery = "*"
+redis = "*"
+flask-redis = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
