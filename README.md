@@ -1,5 +1,5 @@
-# School Portal #
-This is a PWA that manages CBC operations.
+# Bat Cave #
+This is a PWA content delivery platform.
 
 ## Dependencies ##
 To run this project, you need the following installed:
@@ -110,5 +110,4 @@ DB_NAME='<your_database_name>'
 DATABASE_URI=''
 ```
 4) Replace the variables in the mail and db configurations with information that match your respective setup.
-=======
-# bat_cave
+
