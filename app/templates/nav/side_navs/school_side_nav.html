@@ -1,0 +1,209 @@
+<div class="sidebar-wrapper">
+    <div>
+        <div class="logo-wrapper">
+            <a href="{{ url_for(current_user.type + '.dashboard') }}">
+                <img class="img-fluid for-light" src="{{ url_for('static', filename='assets/images/logo/logo.png') }}" alt="">
+            </a>
+            <div class="back-btn">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="toggle-sidebar">
+                <i class="fa fa-cog status_toggle middle sidebar-toggle"></i>
+            </div>
+        </div>
+        <div class="logo-icon-wrapper">
+            <a href="{{ url_for(current_user.type + '.dashboard') }}">
+                <img class="img-fluid" src="{{ url_for('static', filename='assets/images/logo/logo-icon1.png') }}" alt="">
+            </a>
+        </div>
+        <nav class="sidebar-main">
+            <div class="left-arrow" id="left-arrow">
+                <i data-feather="arrow-left"></i>
+            </div>
+            <div id="sidebar-menu">
+                <ul class="sidebar-links" id="simple-bar">
+                    <li class="back-btn">
+                        <a href="{{ url_for('main.home') }}">
+                            <img class="img-fluid" src="{{ url_for('static', filename='assets/images/logo/logo-icon.png') }}" alt="">
+                        </a>
+                        <div class="mobile-back text-end">
+                            <span>Back</span>
+                            <i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                        </div>
+                    </li>
+                    <li class="sidebar-main-title">
+                        <h6 class="lan-1">General </h6>
+                    </li>
+                    <li class="menu-box">
+                        <ul>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="home"></i>
+                                    <span class="lan-3">Dashboard </span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li>
+                                        <a class="lan-4" href="template/index.html">Default</a>
+                                    </li>
+                                    <li>
+                                        <a class="lan-5" href="template/dashboard-02.html">Ecommerce</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="airplay"></i>
+                                    <span class="lan-6">Widgets</span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="template/general-widget.html">General</a></li>
+                                    <li><a href="template/chart-widget.html">Chart</a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="layout"></i>
+                                    <span class="lan-7">Page layout</span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="template/box-layout.html">Boxed</a></li>
+                                    <li><a href="template/layout-rtl.html">RTL</a></li>
+                                    <li><a href="template/layout-dark.html">Dark Layout</a></li>
+                                    <li><a href="template/hide-on-scroll.html">Hide Nav Scroll</a></li>
+                                    <li><a href="template/footer-light.html">Footer Light</a></li>
+                                    <li><a href="template/footer-dark.html">Footer Dark</a></li>
+                                    <li><a href="template/footer-fixed.html">Footer Fixed</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sidebar-main-title">
+                        <h6 class="lan-8">Applications </h6>
+                    </li>
+                    <li class="menu-box">
+                        <ul>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="box"></i>
+                                    <span>Project </span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="template/projects.html">Project List</a></li>
+                                    <li><a href="template/projectcreate.html">Create new</a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/file-manager.html">
+                                    <i data-feather="git-pull-request"></i>
+                                    <span>File manager</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/kanban.html">
+                                    <i data-feather="monitor"> </i>
+                                    <span>kanban Board</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="shopping-bag"></i>
+                                    <span>Ecommerce</span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="template/product.html">Product</a></li>
+                                    <li><a href="template/product-page.html">Product page</a></li>
+                                    <li><a href="template/add-products.html">Add Product</a></li>
+                                    <li><a href="template/list-products.html">Product list</a></li>
+                                    <li><a href="template/payment-details.html">Payment Details</a></li>
+                                    <li><a href="template/order-history.html">Order History</a></li>
+                                    <li><a href="template/invoice-template.html">Invoice</a></li>
+                                    <li><a href="template/cart.html">Cart</a></li>
+                                    <li><a href="template/list-wish.html">Wishlist</a></li>
+                                    <li><a href="template/checkout.html">Checkout</a></li>
+                                    <li><a href="template/pricing.html">Pricing </a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="mail"></i>
+                                    <span>Email</span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="template/email_inbox.html">Mail Inbox</a></li>
+                                    <li><a href="template/email_read.html">Read mail</a></li>
+                                    <li><a href="template/email_compose.html">Compose</a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="message-circle"></i>
+                                    <span>Chat</span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="template/chat.html">Chat App</a></li>
+                                    <li><a href="template/chat-video.html">Video chat</a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                    <i data-feather="users"></i>
+                                    <span>Users</span>
+                                </a>
+                                <ul class="sidebar-submenu">
+                                    <li><a href="template/user-profile.html">Users Profile</a></li>
+                                    <li><a href="template/edit-profile.html">Users Edit</a></li>
+                                    <li><a href="template/user-cards.html">Users Cards</a></li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/bookmark.html">
+                                    <i data-feather="heart"></i>
+                                    <span>Bookmarks</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/contacts.html">
+                                    <i data-feather="list"></i>
+                                    <span>Contacts</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/task.html">
+                                    <i data-feather="check-square"></i>
+                                    <span>Tasks</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/calendar-basic.html">
+                                    <i data-feather="calendar"></i>
+                                    <span>Calendar</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/social-app.html">
+                                    <i data-feather="zap"></i>
+                                    <span>Social App</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/to-do.html">
+                                    <i data-feather="clock"></i>
+                                    <span>To-Do</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list">
+                                <a class="sidebar-link sidebar-title link-nav" href="template/search.html">
+                                    <i data-feather="search"></i>
+                                    <span>Search Result</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-arrow" id="right-arrow">
+                <i data-feather="arrow-right"></i>
+            </div>
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,452 @@
+# Russian translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-05-27 12:40-0700\n"
+"PO-Revision-Date: 2022-05-27 12:49-0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: app/auth/views.py:62
+msgid "Login"
+msgstr ""
+
+#: app/auth/views.py:76
+msgid "Invalid username or password."
+msgstr ""
+
+#: app/auth/views.py:114
+msgid "You have confirmed your account. Thanks!"
+msgstr ""
+
+#: app/auth/views.py:116 app/auth/views.py:185 app/auth/views.py:219
+msgid "The confirmation link is invalid or has expired."
+msgstr ""
+
+#: app/auth/views.py:133
+msgid "A new confirmation email has been sent to you by email."
+msgstr ""
+
+#: app/auth/views.py:160
+msgid "Change Email Address"
+msgstr ""
+
+#: app/auth/views.py:172
+msgid "A confirmation email has been sent to your new email."
+msgstr ""
+
+#: app/auth/views.py:183
+msgid "You have confirmed your new email. Thanks!"
+msgstr ""
+
+#: app/auth/views.py:198
+msgid "Instructions to reset your password"
+msgstr ""
+
+#: app/auth/views.py:202
+msgid ""
+"An email with instructions to reset password has been sent to you by "
+"email."
+msgstr ""
+
+#: app/main/views.py:96
+msgid "Home"
+msgstr ""
+
+#: app/main/views.py:401
+msgid "Subject or Class not found"
+msgstr ""
+
+#: app/school/views.py:86
+msgid "Manage Staff"
+msgstr ""
+
+#: app/school/views.py:98
+msgid "Add Admin"
+msgstr ""
+
+#: app/school/views.py:110
+msgid "Add Teacher"
+msgstr ""
+
+#: app/school/views.py:122
+msgid "Add Finance"
+msgstr ""
+
+#: app/sys_admin/views.py:75
+msgid "School has been added."
+msgstr ""
+
+#: app/sys_admin/views.py:94
+msgid "School ownership has been added."
+msgstr ""
+
+#: app/teacher/views.py:60
+msgid "Dashboard"
+msgstr ""
+
+#: app/teacher/views.py:72
+msgid "Manage Attendance"
+msgstr ""
+
+#: app/teacher/views.py:84
+msgid "Mark Attendance"
+msgstr ""
+
+#: app/teacher/views.py:96
+msgid "Manage CBA"
+msgstr ""
+
+#: app/teacher/views.py:108 app/teacher/views.py:120
+msgid "Manage CBA Results"
+msgstr ""
+
+#: app/teacher/views.py:132
+msgid "Manage Exam"
+msgstr ""
+
+#: app/teacher/views.py:144
+msgid "Enter Exam Results"
+msgstr ""
+
+#: app/teacher/views.py:156
+msgid "Edit Exam Results"
+msgstr ""
+
+#: app/teacher/views.py:169
+msgid "Create Assessment Book"
+msgstr ""
+
+#: app/templates/admissions.html:9
+msgid "Admissions"
+msgstr ""
+
+#: app/templates/admissions.html:14 app/templates/admissions.html:98
+#: app/templates/forms/add_admission.html:12
+#: app/templates/forms/add_classes.html:10
+#: app/templates/forms/add_document_category.html:13
+#: app/templates/forms/add_gender.html:14
+#: app/templates/forms/add_parent.html:10
+#: app/templates/forms/add_school.html:14
+#: app/templates/forms/add_school_ownership.html:12
+#: app/templates/forms/add_stream.html:12
+#: app/templates/forms/add_student.html:13
+#: app/templates/forms/add_student.html:89
+#: app/templates/forms/add_subject.html:15
+#: app/templates/forms/add_teacher.html:12
+#: app/templates/forms/add_teacher.html:102
+#: app/templates/forms/add_term.html:13
+msgid "Close"
+msgstr ""
+
+#: app/templates/admissions.html:15 app/templates/admissions.html:99
+#: app/templates/forms/add_admission.html:13
+#: app/templates/forms/add_classes.html:11
+#: app/templates/forms/add_document_category.html:14
+#: app/templates/forms/add_gender.html:15
+#: app/templates/forms/add_parent.html:11
+#: app/templates/forms/add_school.html:15
+#: app/templates/forms/add_school_ownership.html:13
+#: app/templates/forms/add_stream.html:13
+#: app/templates/forms/add_student.html:14
+#: app/templates/forms/add_student.html:90
+#: app/templates/forms/add_subject.html:16
+#: app/templates/forms/add_teacher.html:13
+#: app/templates/forms/add_teacher.html:103
+#: app/templates/forms/add_term.html:14
+msgid "Edit"
+msgstr ""
+
+#: app/templates/admissions.html:16 app/templates/admissions.html:100
+#: app/templates/forms/add_admission.html:14
+#: app/templates/forms/add_classes.html:12
+#: app/templates/forms/add_document_category.html:15
+#: app/templates/forms/add_gender.html:16
+#: app/templates/forms/add_parent.html:12
+#: app/templates/forms/add_school.html:16
+#: app/templates/forms/add_school_ownership.html:14
+#: app/templates/forms/add_stream.html:14
+#: app/templates/forms/add_student.html:15
+#: app/templates/forms/add_student.html:91
+#: app/templates/forms/add_subject.html:17
+#: app/templates/forms/add_teacher.html:14
+#: app/templates/forms/add_teacher.html:104
+#: app/templates/forms/add_term.html:15
+msgid "Refresh"
+msgstr ""
+
+#: app/templates/admissions.html:30
+msgid "Add Admission"
+msgstr ""
+
+#: app/templates/admissions.html:54 app/templates/admissions.html:91
+#: app/templates/profile.html:160
+msgid "Grade"
+msgstr ""
+
+#: app/templates/admissions.html:54
+msgid "Completed !"
+msgstr ""
+
+#: app/templates/admissions.html:62
+msgid "Add Class"
+msgstr ""
+
+#: app/templates/admissions.html:117
+msgid "Students"
+msgstr ""
+
+#: app/templates/admissions.html:135
+msgid "Class Teacher"
+msgstr ""
+
+#: app/templates/admissions.html:152
+msgid "There is no class registered under the admission of"
+msgstr ""
+
+#: app/templates/base.html:95
+msgid "© Copyrights"
+msgstr ""
+
+#: app/templates/base.html:95
+msgid "All rights reserved."
+msgstr ""
+
+#: app/templates/profile.html:47
+msgid "Gender:"
+msgstr ""
+
+#: app/templates/profile.html:53
+msgid "Date Of Birth:"
+msgstr ""
+
+#: app/templates/profile.html:59
+msgid "E-mail:"
+msgstr ""
+
+#: app/templates/profile.html:65
+msgid "Phone:"
+msgstr ""
+
+#: app/templates/profile.html:71
+msgid "Admission Date:"
+msgstr ""
+
+#: app/templates/profile.html:77
+msgid "Class:"
+msgstr ""
+
+#: app/templates/profile.html:83
+msgid "Roll:"
+msgstr ""
+
+#: app/templates/profile.html:88
+msgid "TSC No:"
+msgstr ""
+
+#: app/templates/profile.html:112
+msgid "Subjects I Teach."
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:111 app/templates/profile.html:112
+msgid "Subjects Taught"
+msgstr ""
+
+#: app/templates/profile.html:118
+msgid "CBA"
+msgstr ""
+
+#: app/templates/profile.html:122
+msgid "Settings"
+msgstr ""
+
+#: app/templates/profile.html:141
+msgid "I have"
+msgstr ""
+
+#: app/templates/profile.html:141
+msgid " has"
+msgstr ""
+
+#: app/templates/profile.html:141
+msgid "no subject specification."
+msgstr ""
+
+#: app/templates/profile.html:151
+msgid "CBA History"
+msgstr ""
+
+#: app/templates/profile.html:160
+msgid "term"
+msgstr ""
+
+#: app/templates/profile.html:160
+msgid "results"
+msgstr ""
+
+#: app/templates/profile.html:170
+msgid "There are no entries at the moment."
+msgstr ""
+
+#: app/templates/profile.html:184
+msgid "Subjects Enrolled"
+msgstr ""
+
+#: app/templates/forms/add_admission.html:6
+msgid "Add New Admission"
+msgstr ""
+
+#: app/templates/forms/add_admission.html:25
+#: app/templates/forms/add_classes.html:26
+#: app/templates/forms/add_document_category.html:29
+#: app/templates/forms/add_gender.html:33
+#: app/templates/forms/add_parent.html:32
+#: app/templates/forms/add_school.html:82
+#: app/templates/forms/add_school_ownership.html:28
+#: app/templates/forms/add_stream.html:28
+#: app/templates/forms/add_student.html:174
+#: app/templates/forms/add_subject.html:34
+#: app/templates/forms/add_teacher.html:136
+#: app/templates/forms/add_term.html:35
+msgid "Save"
+msgstr ""
+
+#: app/templates/forms/add_admission.html:26
+#: app/templates/forms/add_classes.html:27
+#: app/templates/forms/add_document_category.html:30
+#: app/templates/forms/add_gender.html:34
+#: app/templates/forms/add_parent.html:33
+#: app/templates/forms/add_school.html:83
+#: app/templates/forms/add_school_ownership.html:29
+#: app/templates/forms/add_stream.html:29
+#: app/templates/forms/add_student.html:173
+#: app/templates/forms/add_subject.html:35
+#: app/templates/forms/add_teacher.html:135
+#: app/templates/forms/add_term.html:36
+msgid "Reset"
+msgstr ""
+
+#: app/templates/forms/add_classes.html:5
+msgid "Add New Class"
+msgstr ""
+
+#: app/templates/forms/add_document_category.html:7
+msgid "Add New Document Category"
+msgstr ""
+
+#: app/templates/forms/add_gender.html:8
+msgid "Add New Gender"
+msgstr ""
+
+#: app/templates/forms/add_parent.html:4
+msgid "Add New Parents"
+msgstr ""
+
+#: app/templates/forms/add_school.html:8
+msgid "Add New School"
+msgstr ""
+
+#: app/templates/forms/add_school.html:23
+msgid "School Identity"
+msgstr ""
+
+#: app/templates/forms/add_school.html:41
+msgid "Address"
+msgstr ""
+
+#: app/templates/forms/add_school.html:59
+msgid "About"
+msgstr ""
+
+#: app/templates/forms/add_school.html:68
+msgid "Authentication"
+msgstr ""
+
+#: app/templates/forms/add_school_ownership.html:7
+msgid "Add New School Ownership Status"
+msgstr ""
+
+#: app/templates/forms/add_stream.html:7
+msgid "Add New Stream"
+msgstr ""
+
+#: app/templates/forms/add_student.html:7
+msgid "Add New Student"
+msgstr ""
+
+#: app/templates/forms/add_student.html:38
+#: app/templates/forms/add_student.html:113
+#: app/templates/forms/add_teacher.html:36
+msgid "Bio Data"
+msgstr ""
+
+#: app/templates/forms/add_student.html:62
+msgid "Admission Particulars"
+msgstr ""
+
+#: app/templates/forms/add_student.html:98
+msgid "Subject Selection"
+msgstr ""
+
+#: app/templates/forms/add_student.html:101
+msgid "Parenting"
+msgstr ""
+
+#: app/templates/forms/add_student.html:104
+msgid "Student Documents"
+msgstr ""
+
+#: app/templates/forms/add_student.html:129
+#: app/templates/forms/add_teacher.html:57
+msgid "Contact Info"
+msgstr ""
+
+#: app/templates/forms/add_student.html:142
+#: app/templates/forms/add_teacher.html:80
+msgid "Portal Security"
+msgstr ""
+
+#: app/templates/forms/add_student.html:156
+msgid "Birth Certificate"
+msgstr ""
+
+#: app/templates/forms/add_subject.html:9
+msgid "Add New Subject"
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:7
+msgid "Add New Teacher"
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:70
+msgid "TSC Particulars"
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:114
+msgid "Classes Assigned"
+msgstr ""
+
+#: app/templates/forms/add_term.html:7
+msgid "Add New Term"
+msgstr ""
+
+#: app/templates/school_templates/base.html:10
+msgid "Login."
+msgstr ""
+
+#: app/templates/school_templates/base.html:95
+msgid "© Copyrights "
+msgstr ""
+

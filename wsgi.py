@@ -1,6 +1,15 @@
-from app import create_app
+from gevent import monkey
+monkey.patch_all()
 
-wsgi = create_app('development')
 
-if __name__ == '__main__':
-    wsgi.run()
+def run_app():
+    from app import create_app
+    return create_app('development')
+
+
+app, celery = run_app()
+
+@celery.task(bind=True)
+def debug_task(self):
+    "debug handler for celery"
+    app.logger.log(1, msg=self.request)

@@ -1,0 +1,10 @@
+{{ _('Dear') }} {% if user.type == 'school' %}{{ user.name }}{% else %}{{ user.first_name }} {{ user.last_name }}{% endif %},
+
+{{ _('Welcome to brainy!') }}
+{{ _('To confirm your account please click on the following link:') }}
+{{ url_for('auth.confirm', token=token, _external=True) }}
+
+{{ _('Sincerely') }},
+{{ _('The brainy Team') }}
+
+{{ _('Note: replies to this email address are not monitored.') }}

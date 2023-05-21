@@ -1,0 +1,26 @@
+{
+	"name": "School Portal",
+	"short_name": "SP",
+	"id": "school",
+	"description": "school web portal",
+	"start_url": "/school/",
+	"scope": "/school/",
+	"background_color": "#FFE9D2",
+	"theme_color": "#FFE1C4",
+	"display": "standalone",
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "/static/pwa/icons/maskable_icon_x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/static/pwa/icons/maskable_icon_x192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	]
+}

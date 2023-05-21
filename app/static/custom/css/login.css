@@ -1,0 +1,10 @@
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: cursive;
+}
+
+legend{
+    text-align: center;
+}
