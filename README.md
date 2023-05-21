@@ -1,5 +1,5 @@
-# School Portal #
-This is a PWA that manages CBC operations.
+# Bat Cave #
+This is a PWA content delivery platform.
 
 ## Dependencies ##
 To run this project, you need the following installed:
