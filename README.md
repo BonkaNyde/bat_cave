@@ -110,5 +110,4 @@ DB_NAME='<your_database_name>'
 DATABASE_URI=''
 ```
 4) Replace the variables in the mail and db configurations with information that match your respective setup.
-=======
-# bat_cave
+
