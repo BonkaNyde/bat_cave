@@ -1,0 +1,2 @@
+class RedisKeyError(Exception):
+    pass

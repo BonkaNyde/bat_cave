@@ -1,0 +1,25 @@
+{
+    "name": "System Admin Portal",
+    "short_name": "SystemAdminPortal",
+    "id": "/sys_admin",
+    "scope": "/sys_admin/",
+    "start_url": "/sys_admin/",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/static/pwa/icons/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/static/pwa/icons/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

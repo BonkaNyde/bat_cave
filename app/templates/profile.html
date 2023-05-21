@@ -1,0 +1,209 @@
+{% import 'macros.html' as macro %}
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="card-body">
+    <div class="heading-layout1">
+        <div class="item-title">
+            <h3>{% if user.id == current_user.id %}About Me{% else %}About{% endif %}</h3>
+        </div>
+        <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">...</a>
+
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#"><i class="fas fa-times text-orange-red"></i>Close</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-cogs text-dark-pastel-green"></i>Edit</a>
+                <a class="dropdown-item" href="#"><i class="fas fa-redo-alt text-orange-peel"></i>Refresh</a>
+            </div>
+        </div>
+    </div>
+    <div class="single-info-details">
+        <div class="item-img">
+            <img src="{% if user.profile_pic_path %}{{ user.profile_pic_path }}{% else %}{{ url_for('static', filename='img/default-prof.png') }}{% endif %}"
+                alt="{{ user.first_name }}'s profile picture.">
+        </div>
+        <div class="item-content">
+            <div class="header-inline item-header">
+                <h3 class="text-dark-medium font-medium">{{ user.first_name }} {{ user.last_name }} {{ user.sur_name }}
+                </h3>
+                <div class="header-elements">
+                    <ul>
+                        <li><a href="#"><i class="far fa-edit"></i></a></li>
+                        <li><a href="#"><i class="fas fa-print"></i></a></li>
+                        <li><a href="#"><i class="fas fa-download"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <p>
+                Aliquam erat volutpat. Curabiene natis massa sedde lacu stiquen sodale
+                word moun taiery.Aliquam erat volutpaturabiene natis massa sedde sodale
+                word moun taiery.
+            </p> -->
+            <div class="info-table table-responsive">
+                <table class="table text-nowrap">
+                    <tbody>
+                        {% if user.gender %}
+                        <tr>
+                            <td>{{_('Gender:')}}</td>
+                            <td class="font-medium text-dark-medium">{{ user.gender.name }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if user.d_o_b %}
+                        <tr>
+                            <td>{{_('Date Of Birth:')}}</td>
+                            <td class="font-medium text-dark-medium">{{ user.d_o_b }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if user.email %}
+                        <tr>
+                            <td>{{_('E-mail:')}}</td>
+                            <td class="font-medium text-dark-medium">{{ user.email }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if user.phone %}
+                        <tr>
+                            <td>{{_('Phone:')}}</td>
+                            <td class="font-medium text-dark-medium">{{ user.phone }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if user.admission_date %}
+                        <tr>
+                            <td>{{_('Admission Date:')}}</td>
+                            <td class="font-medium text-dark-medium">{{ user.admission_date }}</td>
+                        </tr>
+                        {% endif %}
+                        {% if user.class_room %}
+                        <tr>
+                            <td>{{_('Class:')}}</td>
+                            <td class="font-medium text-dark-medium">{{ process_grade(user.class_room.admission.year) }}
+                                {{ user.class_room.stream.name }}</td>
+                        </tr>
+                        {% endif %}
+                        <tr>
+                            <td>{{_('Roll:')}}</td>
+                            <td class="font-medium text-dark-medium">#{{ user.id }}</td>
+                        </tr>
+                        {% if user.tsc_no %}
+                        <tr>
+                            <td>{{_('TSC No:')}}</td>
+                            <td class="font-medium text-dark-medium">{{ user.tsc_no }}</td>
+                        </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col">
+        <div class="card ui-tab-card">
+            <div class="card-body">
+                {% if current_user.type and current_user.type == 'admin' or current_user.id == user.id %} 
+                <!-- just to make sure the right user is accessing this material. -->
+                <div class="basic-tab">
+                    <ul class="nav nav-tabs" role="tablist">
+                        {% if user.type and user.type == 'teacher' %}
+                        <!-- only a specific user type can generate this data -->
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tsa" role="tab" aria-selected="true">
+                                {% if user.id == current_user.id %}{{_('Subjects I Teach.')}}{% else %}{{_('Subjects Taught')}}{% endif %}
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if not user.type %}
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#stp" role="tab" aria-selected="false">{{_('CBA')}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-selected="false">
+                                {{_('Settings')}}
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    <div class="tab-content">
+                        {% if user.type and user.type == 'teacher' %}
+                        <div class="tab-pane fade show active" id="tsa" role="tabpanel">
+                            {% if user.subjects.all() %}
+                            <ul>
+                                <div class="row">
+                                    {% for allocated_subject in user.subjects.all() %}
+                                    <button type="button" class="btn-fill-lmd radius-30 text-light shadow-true-v bg-true-v">
+                                        {{ allocated_subject.subject.name }} - {{ allocated_subject.subject.code }}
+                                    </button>
+                                    {% endfor %}
+                                </div>
+                            </ul>
+                            {% else %}
+                            <p>{% if current_user.id == user.id %}{{_('I have')}}{% else %}{{ user.first_name }}{{_(' has')}}{% endif %} {{_('no subject specification.')}}</p>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                        {% if not user.type %}
+                        <div class="tab-pane fade" id="stp" role="tabpanel">
+                            <div class="card height-auto">
+                                <div class="card-body">
+                                    <div class="heading-layout1">
+                                        <div class="item-title">
+                                            <h3>{{_('CBA History')}}</h3>
+                                        </div>
+                                    </div>                                
+                                    <div class="notice-board-wrap">
+                                        {% if user.termly_performance.all() %}
+                                        {% for termly_performance in user.termly_perfomance.all() %}
+                                        <div class="notice-list">
+                                            <h6 class="notice-title">
+                                                <a href="#">
+                                                    {{_('Grade')}} {{ termly_perfomance.term.closing_date.year - user.admission_date.year }} {{_('term')}} {{ termly_perfomance.term.term_name }} {{_('results')}}.
+                                                </a>
+                                            </h6>
+                                            <div class="entry-meta"><span>5 min ago</span></div>
+                                        </div>
+                                        {% endfor %}
+                                        {% else %}
+                                        <div class="notice-list">
+                                            <h6 class="notice-title">
+                                                <a href="#">
+                                                    {{_('There are no entries at the moment.')}}
+                                                </a>
+                                            </h6>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab3" role="tabpanel">
+                            <div class="card height-auto">
+                                <div class="card-body">
+                                    <div class="heading-layout1 mg-b-25">
+                                        <div class="item-title">
+                                            <h3>{{_('Subjects Enrolled')}}</h3>
+                                        </div>
+                                    </div>
+                                    <div class="ui-btn-wrap">
+                                        <ul>
+                                            {% for selected_subject in user.subject_enrollment %}
+                                            <li>
+                                                <button type="button" class="btn-fill-lmd radius-30 text-light shadow-dodger-blue bg-dodger-blue">
+                                                    {{ selected_subject.subject.name }}
+                                                </button>
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

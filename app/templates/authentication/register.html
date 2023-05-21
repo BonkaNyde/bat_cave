@@ -1,0 +1,129 @@
+{% import 'macros.html' as macro %}
+{% extends "authentication/auth_base.html" %}
+
+{% block body %}
+<div class="container bg-white">
+    <div class="row">
+        <div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2"></div>
+        <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-8">
+            <form action="{{url_for('auth.register')}}" autocomplete="off" method='POST'>
+                {{ form.hidden_tag() }}
+                <legend>User Registration Form</legend><br>
+                <hr>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        {{ macro.render_field(form.first_name, class="form-control", placeholder='first name') }}
+                    </div>
+                    <div class="form-group col-md-4">
+                        {{ macro.render_field(form.last_name, class='form-control', capitalize=True, placeholder='last name') }}
+                    </div>
+                    <div class="form-group col-md-4">
+                        {{ macro.render_field(form.sur_name, class='form-control', capitalize=true, placeholder='sur name') }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        {{ macro.render_field(form.email, class='form-control', autocomplete=False, placeholder='email') }}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        I am a
+                        {{macro.render_field(form.gender)}}
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        {{ macro.render_field(form.password, type='password', class='form-control', placeholder='password') }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ macro.render_field(form.password_confirm, type='password', class='form-control', placeholder='confirm password') }}
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck3"
+                            aria-describedby="invalidCheck3Feedback" required>
+                        <label class="form-check-label" for="invalidCheck3">I agree to the 
+                            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                terms and conditions.
+                            </a>
+                        </label>
+                        <!-- Modal -->
+                        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Terms and conditions.</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita
+                                        repellendus vero odio provident nesciunt numquam, suscipit ex architecto veniam
+                                        aperiam consequatur quo, vitae molestias earum. Impedit vitae officia libero?
+                                        Perspiciatis dolor amet porro nam laudantium suscipit, eaque voluptas quidem
+                                        velit corrupti ab officia blanditiis quae dolorem impedit possimus! Aspernatur,
+                                        voluptates. Distinctio, placeat illo. Soluta reiciendis eius doloremque
+                                        distinctio pariatur.
+                                        Explicabo quia, alias repellendus fugit nemo delectus totam non assumenda at
+                                        omnis sint, maiores architecto eos quam quaerat temporibus eius accusamus enim!
+                                        Assumenda saepe vero esse eum voluptates, numquam excepturi.
+                                        Officia dignissimos ratione natus quam laboriosam omnis dolores veritatis a
+                                        tenetur. Pariatur, magni aliquid numquam vero delectus aspernatur voluptate ea
+                                        cupiditate officia, culpa nostrum neque dicta fuga. Deleniti, aperiam eos?
+                                        Omnis, nihil non perspiciatis quam facere similique reiciendis voluptatum magnam
+                                        eius quas possimus et eos cum necessitatibus eligendi aperiam accusamus dolorum
+                                        repellendus eaque! Molestias culpa ab quo quaerat a eos!
+                                        Amet pariatur temporibus totam, adipisci nam sequi quidem numquam possimus ut
+                                        debitis? Voluptatum deserunt voluptatem dolore aliquid consequuntur esse
+                                        dignissimos, obcaecati non fuga veniam ex est, tenetur sapiente reprehenderit
+                                        modi?
+                                        Beatae saepe quis sed cupiditate corporis eligendi. Illo at pariatur quam eius
+                                        neque iure aut. Omnis sequi porro a dignissimos at molestias deserunt fugiat
+                                        repellendus ad, possimus suscipit! Temporibus, necessitatibus!
+                                        Asperiores sequi alias voluptas dolorem quibusdam repellat libero, vitae
+                                        pariatur beatae voluptatem tempora! Voluptas, architecto! Unde dolore, odio,
+                                        blanditiis distinctio consequuntur maiores ratione magnam nisi, a asperiores
+                                        adipisci id totam?
+                                        Beatae, aperiam dolorum, rerum iste veritatis possimus recusandae voluptate
+                                        sequi in quo, voluptatum consectetur. Sequi perspiciatis dicta libero ut
+                                        repudiandae porro ex corrupti nam fugiat voluptate, quasi at expedita natus.
+                                        Nulla voluptates explicabo, temporibus, sint repellendus magnam, magni atque
+                                        officiis totam libero minima dolores numquam voluptatibus inventore quidem
+                                        itaque vero voluptas eos aliquam voluptatum? Accusantium ducimus a ad quo
+                                        incidunt!
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="invalidCheck3Feedback" class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <a href="{{url_for('auth.login')}}">Already have an account?</a>
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ macro.render_field(form.submit, type='submit', class='btn btn-primary') }}
+                        <!-- <i class="fa fa-spinner fa-pulse fa-2x" style="min-height: 10px!important; color: blue;"></i> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-1 col-sm-1 col-md-1 col-lg-2 col-xl-2"></div>
+    </div>
+</div>
+{% endblock %}

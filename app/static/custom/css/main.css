@@ -1,0 +1,65 @@
+#preloader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #77b3d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+};
+
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+};
+
+/* @keyframes topic {
+    from {
+      	opacity: .3;
+    }
+    to {
+      	opacity: 1;
+    }
+} */
+
+/* body{
+    min-height: 100vh;
+}
+
+main{
+    min-height: 100vh; */
+/* } */
+
+.kv-avatar .krajee-default.file-preview-frame,.kv-avatar .krajee-default.file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.kv-avatar {
+    display: inline-block;
+}
+.kv-avatar .file-input {
+    display: table-cell;
+    width: 213px;
+}
+.file-input>button{
+    background-color: gray;
+    color: white;
+    border-color: grey;
+}
+.file-input>button:hover {
+    background-color: red;
+    border-color: red;
+}
+.kv-reqd {
+    color: red;
+    font-family: monospace;
+    font-weight: normal;
+}
+/* .select2-selection__rendered{
+    color: black;
+} */

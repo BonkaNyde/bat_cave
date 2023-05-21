@@ -1,0 +1,10 @@
+{% import 'macros.html' as macro %}
+{% extends 'base.html' %}
+
+{% block body %}
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <!--  -->
+    {{ macro.render_field(form.submit, type='submit', class='btn btn-primary') }}
+</form>
+{% endblock %}

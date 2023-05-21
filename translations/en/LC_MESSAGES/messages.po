@@ -1,0 +1,810 @@
+# English translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-05-27 12:08-0700\n"
+"PO-Revision-Date: 2022-05-27 12:08-0700\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: app/auth/forms.py:20 app/auth/forms.py:62 app/auth/forms.py:71
+msgid "Email"
+msgstr ""
+
+#: app/auth/forms.py:20
+msgid "Enter email"
+msgstr ""
+
+#: app/auth/forms.py:21 app/auth/forms.py:47 app/main/forms.py:96
+#: app/school/forms.py:93 app/sys_admin/forms.py:96 app/teacher/forms.py:96
+msgid "Password"
+msgstr ""
+
+#: app/auth/forms.py:21
+msgid "Enter password"
+msgstr ""
+
+#: app/auth/forms.py:22
+msgid "Keep me logged in"
+msgstr ""
+
+#: app/auth/forms.py:28
+msgid "Old password"
+msgstr ""
+
+#: app/auth/forms.py:29 app/auth/forms.py:72
+msgid "New password"
+msgstr ""
+
+#: app/auth/forms.py:31 app/auth/forms.py:73
+msgid "Passwords must match."
+msgstr ""
+
+#: app/auth/forms.py:33
+msgid "Confirm new password"
+msgstr ""
+
+#: app/auth/forms.py:34
+msgid "Change password"
+msgstr ""
+
+#: app/auth/forms.py:38
+msgid "Invalid old password."
+msgstr ""
+
+#: app/auth/forms.py:42
+msgid "New password is the same as old password."
+msgstr ""
+
+#: app/auth/forms.py:46
+msgid "New email"
+msgstr ""
+
+#: app/auth/forms.py:48
+msgid "Change email"
+msgstr ""
+
+#: app/auth/forms.py:52
+msgid "This is your current email."
+msgstr ""
+
+#: app/auth/forms.py:54
+msgid "Email already registered."
+msgstr ""
+
+#: app/auth/forms.py:58
+msgid "Invalid password."
+msgstr ""
+
+#: app/auth/forms.py:63 app/auth/forms.py:75
+msgid "Reset password"
+msgstr ""
+
+#: app/auth/forms.py:67 app/auth/forms.py:79
+msgid "Unknown email address."
+msgstr ""
+
+#: app/auth/forms.py:74
+msgid "Confirm password"
+msgstr ""
+
+#: app/auth/views.py:62
+msgid "Login"
+msgstr ""
+
+#: app/auth/views.py:76
+msgid "Invalid username or password."
+msgstr ""
+
+#: app/auth/views.py:114
+msgid "You have confirmed your account. Thanks!"
+msgstr ""
+
+#: app/auth/views.py:116 app/auth/views.py:185 app/auth/views.py:219
+msgid "The confirmation link is invalid or has expired."
+msgstr ""
+
+#: app/auth/views.py:133
+msgid "A new confirmation email has been sent to you by email."
+msgstr ""
+
+#: app/auth/views.py:160
+msgid "Change Email Address"
+msgstr ""
+
+#: app/auth/views.py:172
+msgid "A confirmation email has been sent to your new email."
+msgstr ""
+
+#: app/auth/views.py:183
+msgid "You have confirmed your new email. Thanks!"
+msgstr ""
+
+#: app/auth/views.py:198
+msgid "Instructions to reset your password"
+msgstr ""
+
+#: app/auth/views.py:202
+msgid ""
+"An email with instructions to reset password has been sent to you by "
+"email."
+msgstr ""
+
+#: app/main/forms.py:88 app/school/forms.py:85 app/sys_admin/forms.py:88
+#: app/teacher/forms.py:88
+msgid "First Name"
+msgstr ""
+
+#: app/main/forms.py:89 app/school/forms.py:86 app/sys_admin/forms.py:89
+#: app/teacher/forms.py:89
+msgid "Last Name"
+msgstr ""
+
+#: app/main/forms.py:90 app/school/forms.py:87 app/sys_admin/forms.py:90
+#: app/teacher/forms.py:90
+msgid "Sur Name"
+msgstr ""
+
+#: app/main/forms.py:94 app/school/forms.py:91 app/sys_admin/forms.py:94
+#: app/teacher/forms.py:94
+msgid "Phone"
+msgstr ""
+
+#: app/main/forms.py:95 app/school/forms.py:92 app/sys_admin/forms.py:95
+#: app/teacher/forms.py:95
+msgid "Email Address"
+msgstr ""
+
+#: app/main/forms.py:102 app/school/forms.py:99 app/sys_admin/forms.py:102
+#: app/teacher/forms.py:102
+msgid "This email is already registered."
+msgstr ""
+
+#: app/main/forms.py:108 app/school/forms.py:105 app/sys_admin/forms.py:108
+#: app/teacher/forms.py:108
+msgid "This phone is already registered."
+msgstr ""
+
+#: app/main/forms.py:119 app/school/forms.py:116 app/teacher/forms.py:119
+msgid "Min"
+msgstr ""
+
+#: app/main/forms.py:120 app/school/forms.py:117 app/teacher/forms.py:120
+msgid "Max"
+msgstr ""
+
+#: app/main/forms.py:126 app/main/forms.py:253 app/school/forms.py:123
+#: app/school/forms.py:211 app/sys_admin/forms.py:137
+#: app/sys_admin/forms.py:264 app/teacher/forms.py:126 app/teacher/forms.py:253
+msgid "Sex"
+msgstr ""
+
+#: app/main/forms.py:127 app/school/forms.py:124 app/sys_admin/forms.py:138
+#: app/teacher/forms.py:127
+msgid "Date of Birth"
+msgstr ""
+
+#: app/main/forms.py:128 app/school/forms.py:125 app/sys_admin/forms.py:139
+#: app/teacher/forms.py:128
+msgid "Nemis No."
+msgstr ""
+
+#: app/main/forms.py:129 app/school/forms.py:126 app/sys_admin/forms.py:140
+#: app/teacher/forms.py:129
+msgid "Class"
+msgstr ""
+
+#: app/main/forms.py:130 app/school/forms.py:127 app/sys_admin/forms.py:141
+#: app/teacher/forms.py:130
+msgid "Admission Date"
+msgstr ""
+
+#: app/main/forms.py:131 app/school/forms.py:128 app/sys_admin/forms.py:142
+#: app/teacher/forms.py:131
+msgid "Select Subjects"
+msgstr ""
+
+#: app/main/forms.py:132 app/main/forms.py:255 app/school/forms.py:129
+#: app/school/forms.py:213 app/sys_admin/forms.py:143
+#: app/sys_admin/forms.py:266 app/teacher/forms.py:132 app/teacher/forms.py:255
+msgid "Profile Photo"
+msgstr ""
+
+#: app/main/forms.py:134 app/school/forms.py:131 app/sys_admin/forms.py:145
+#: app/teacher/forms.py:134 app/templates/forms/add_student.html:156
+msgid "Birth Certificate"
+msgstr ""
+
+#: app/main/forms.py:141 app/school/forms.py:138 app/sys_admin/forms.py:152
+#: app/teacher/forms.py:141
+msgid "This student is already registered."
+msgstr ""
+
+#: app/main/forms.py:147 app/school/forms.py:144 app/sys_admin/forms.py:158
+#: app/teacher/forms.py:147
+msgid "Gender"
+msgstr ""
+
+#: app/main/forms.py:148 app/main/forms.py:168 app/main/forms.py:205
+#: app/school/forms.py:145 app/school/forms.py:165 app/sys_admin/forms.py:125
+#: app/sys_admin/forms.py:159 app/sys_admin/forms.py:179
+#: app/sys_admin/forms.py:216 app/teacher/forms.py:148 app/teacher/forms.py:168
+#: app/teacher/forms.py:205
+msgid "Initials"
+msgstr ""
+
+#: app/main/forms.py:149 app/main/forms.py:225 app/school/forms.py:146
+#: app/sys_admin/forms.py:119 app/sys_admin/forms.py:160
+#: app/sys_admin/forms.py:236 app/teacher/forms.py:149 app/teacher/forms.py:225
+msgid "Valid"
+msgstr ""
+
+#: app/main/forms.py:155 app/main/forms.py:161 app/school/forms.py:152
+#: app/school/forms.py:158 app/sys_admin/forms.py:166
+#: app/sys_admin/forms.py:172 app/teacher/forms.py:155 app/teacher/forms.py:161
+msgid "This gender already exists."
+msgstr ""
+
+#: app/main/forms.py:167 app/school/forms.py:164 app/sys_admin/forms.py:118
+#: app/sys_admin/forms.py:124 app/sys_admin/forms.py:178
+#: app/teacher/forms.py:167
+msgid "Name"
+msgstr ""
+
+#: app/main/forms.py:174 app/school/forms.py:171 app/sys_admin/forms.py:185
+#: app/teacher/forms.py:174
+msgid "This stream is already registered"
+msgstr ""
+
+#: app/main/forms.py:180 app/school/forms.py:177 app/sys_admin/forms.py:191
+#: app/teacher/forms.py:180
+msgid "Admission Year"
+msgstr ""
+
+#: app/main/forms.py:186 app/school/forms.py:183 app/sys_admin/forms.py:197
+#: app/teacher/forms.py:186
+msgid "This admission year already exists"
+msgstr ""
+
+#: app/main/forms.py:191 app/school/forms.py:188 app/sys_admin/forms.py:202
+#: app/teacher/forms.py:191
+msgid "Stream"
+msgstr ""
+
+#: app/main/forms.py:192 app/school/forms.py:189 app/sys_admin/forms.py:203
+#: app/teacher/forms.py:192 app/templates/admissions.html:54
+#: app/templates/admissions.html:91 app/templates/profile.html:160
+msgid "Grade"
+msgstr ""
+
+#: app/main/forms.py:198 app/school/forms.py:195 app/sys_admin/forms.py:209
+#: app/teacher/forms.py:198
+msgid "This Class has been registered."
+msgstr ""
+
+#: app/main/forms.py:204 app/sys_admin/forms.py:215 app/teacher/forms.py:204
+msgid "Category"
+msgstr ""
+
+#: app/main/forms.py:211 app/sys_admin/forms.py:222 app/teacher/forms.py:211
+msgid "This document is already registered."
+msgstr ""
+
+#: app/main/forms.py:217 app/sys_admin/forms.py:228 app/teacher/forms.py:217
+msgid "These initials are already registered."
+msgstr ""
+
+#: app/main/forms.py:223 app/sys_admin/forms.py:234 app/teacher/forms.py:223
+msgid "Subject"
+msgstr ""
+
+#: app/main/forms.py:224 app/sys_admin/forms.py:235 app/teacher/forms.py:224
+msgid "Code"
+msgstr ""
+
+#: app/main/forms.py:231 app/sys_admin/forms.py:242 app/teacher/forms.py:231
+msgid "This subject name has already been registered."
+msgstr ""
+
+#: app/main/forms.py:237 app/sys_admin/forms.py:248 app/teacher/forms.py:237
+msgid "This subject code has already been registered."
+msgstr ""
+
+#: app/main/forms.py:243 app/school/forms.py:201 app/sys_admin/forms.py:254
+#: app/teacher/forms.py:243
+msgid "Term Name"
+msgstr ""
+
+#: app/main/forms.py:244 app/school/forms.py:202 app/sys_admin/forms.py:255
+#: app/teacher/forms.py:244
+msgid "Triple Exam Mode"
+msgstr ""
+
+#: app/main/forms.py:245 app/school/forms.py:203 app/sys_admin/forms.py:256
+#: app/teacher/forms.py:245
+msgid "Opening Date"
+msgstr ""
+
+#: app/main/forms.py:246 app/school/forms.py:204 app/sys_admin/forms.py:257
+#: app/teacher/forms.py:246
+msgid "Closing Date"
+msgstr ""
+
+#: app/main/forms.py:252 app/school/forms.py:210 app/sys_admin/forms.py:263
+#: app/teacher/forms.py:252
+msgid "TSC No."
+msgstr ""
+
+#: app/main/forms.py:254 app/school/forms.py:212 app/sys_admin/forms.py:265
+#: app/teacher/forms.py:254
+msgid "Subjects Qualified For"
+msgstr ""
+
+#: app/main/forms.py:261 app/school/forms.py:219 app/sys_admin/forms.py:272
+#: app/teacher/forms.py:261
+msgid "This TSC no is already registered."
+msgstr ""
+
+#: app/main/forms.py:267 app/sys_admin/forms.py:278 app/teacher/forms.py:267
+msgid "Term ID"
+msgstr ""
+
+#: app/main/forms.py:268 app/sys_admin/forms.py:279 app/teacher/forms.py:268
+msgid "Student ID"
+msgstr ""
+
+#: app/main/forms.py:269 app/sys_admin/forms.py:280 app/teacher/forms.py:269
+msgid "Subject ID"
+msgstr ""
+
+#: app/main/forms.py:270 app/sys_admin/forms.py:281 app/teacher/forms.py:270
+msgid "Cat 1"
+msgstr ""
+
+#: app/main/forms.py:271 app/sys_admin/forms.py:282 app/teacher/forms.py:271
+msgid "Cat 2"
+msgstr ""
+
+#: app/main/forms.py:272 app/sys_admin/forms.py:283 app/teacher/forms.py:272
+msgid "End Term"
+msgstr ""
+
+#: app/main/forms.py:278 app/main/forms.py:280 app/main/forms.py:282
+#: app/main/forms.py:284 app/sys_admin/forms.py:289 app/sys_admin/forms.py:291
+#: app/sys_admin/forms.py:293 app/sys_admin/forms.py:295
+#: app/teacher/forms.py:278 app/teacher/forms.py:280 app/teacher/forms.py:282
+#: app/teacher/forms.py:284
+msgid "To"
+msgstr ""
+
+#: app/main/forms.py:279 app/main/forms.py:281 app/main/forms.py:283
+#: app/main/forms.py:285 app/sys_admin/forms.py:290 app/sys_admin/forms.py:292
+#: app/sys_admin/forms.py:294 app/sys_admin/forms.py:296
+#: app/teacher/forms.py:279 app/teacher/forms.py:281 app/teacher/forms.py:283
+#: app/teacher/forms.py:285
+msgid "From"
+msgstr ""
+
+#: app/main/forms.py:291 app/sys_admin/forms.py:302 app/teacher/forms.py:291
+msgid "Lubric"
+msgstr ""
+
+#: app/main/forms.py:292 app/sys_admin/forms.py:303 app/teacher/forms.py:292
+msgid "Performance Data"
+msgstr ""
+
+#: app/main/views.py:96
+msgid "Home"
+msgstr ""
+
+#: app/main/views.py:401
+msgid "Subject or Class not found"
+msgstr ""
+
+#: app/school/views.py:86
+msgid "Manage Staff"
+msgstr ""
+
+#: app/school/views.py:98
+msgid "Add Admin"
+msgstr ""
+
+#: app/school/views.py:110
+msgid "Add Teacher"
+msgstr ""
+
+#: app/school/views.py:122
+msgid "Add Finance"
+msgstr ""
+
+#: app/sys_admin/forms.py:126
+msgid "Ownership"
+msgstr ""
+
+#: app/sys_admin/forms.py:127
+msgid "Website Url"
+msgstr ""
+
+#: app/sys_admin/forms.py:128
+msgid "Location"
+msgstr ""
+
+#: app/sys_admin/forms.py:129
+msgid "School Logo"
+msgstr ""
+
+#: app/sys_admin/forms.py:130
+msgid "School Code"
+msgstr ""
+
+#: app/sys_admin/forms.py:131
+msgid "Description"
+msgstr ""
+
+#: app/sys_admin/views.py:75
+msgid "School has been added."
+msgstr ""
+
+#: app/sys_admin/views.py:94
+msgid "School ownership has been added."
+msgstr ""
+
+#: app/teacher/views.py:60
+msgid "Dashboard"
+msgstr ""
+
+#: app/teacher/views.py:72
+msgid "Manage Attendance"
+msgstr ""
+
+#: app/teacher/views.py:84
+msgid "Mark Attendance"
+msgstr ""
+
+#: app/teacher/views.py:96
+msgid "Manage CBA"
+msgstr ""
+
+#: app/teacher/views.py:108 app/teacher/views.py:120
+msgid "Manage CBA Results"
+msgstr ""
+
+#: app/teacher/views.py:132
+msgid "Manage Exam"
+msgstr ""
+
+#: app/teacher/views.py:144
+msgid "Enter Exam Results"
+msgstr ""
+
+#: app/teacher/views.py:156
+msgid "Edit Exam Results"
+msgstr ""
+
+#: app/teacher/views.py:169
+msgid "Create Assessment Book"
+msgstr ""
+
+#: app/templates/admissions.html:9
+msgid "Admissions"
+msgstr ""
+
+#: app/templates/admissions.html:14 app/templates/admissions.html:98
+#: app/templates/forms/add_admission.html:12
+#: app/templates/forms/add_classes.html:10
+#: app/templates/forms/add_document_category.html:13
+#: app/templates/forms/add_gender.html:14
+#: app/templates/forms/add_parent.html:10
+#: app/templates/forms/add_school.html:14
+#: app/templates/forms/add_school_ownership.html:12
+#: app/templates/forms/add_stream.html:12
+#: app/templates/forms/add_student.html:13
+#: app/templates/forms/add_student.html:89
+#: app/templates/forms/add_subject.html:15
+#: app/templates/forms/add_teacher.html:12
+#: app/templates/forms/add_teacher.html:102
+#: app/templates/forms/add_term.html:13
+msgid "Close"
+msgstr ""
+
+#: app/templates/admissions.html:15 app/templates/admissions.html:99
+#: app/templates/forms/add_admission.html:13
+#: app/templates/forms/add_classes.html:11
+#: app/templates/forms/add_document_category.html:14
+#: app/templates/forms/add_gender.html:15
+#: app/templates/forms/add_parent.html:11
+#: app/templates/forms/add_school.html:15
+#: app/templates/forms/add_school_ownership.html:13
+#: app/templates/forms/add_stream.html:13
+#: app/templates/forms/add_student.html:14
+#: app/templates/forms/add_student.html:90
+#: app/templates/forms/add_subject.html:16
+#: app/templates/forms/add_teacher.html:13
+#: app/templates/forms/add_teacher.html:103
+#: app/templates/forms/add_term.html:14
+msgid "Edit"
+msgstr ""
+
+#: app/templates/admissions.html:16 app/templates/admissions.html:100
+#: app/templates/forms/add_admission.html:14
+#: app/templates/forms/add_classes.html:12
+#: app/templates/forms/add_document_category.html:15
+#: app/templates/forms/add_gender.html:16
+#: app/templates/forms/add_parent.html:12
+#: app/templates/forms/add_school.html:16
+#: app/templates/forms/add_school_ownership.html:14
+#: app/templates/forms/add_stream.html:14
+#: app/templates/forms/add_student.html:15
+#: app/templates/forms/add_student.html:91
+#: app/templates/forms/add_subject.html:17
+#: app/templates/forms/add_teacher.html:14
+#: app/templates/forms/add_teacher.html:104
+#: app/templates/forms/add_term.html:15
+msgid "Refresh"
+msgstr ""
+
+#: app/templates/admissions.html:30
+msgid "Add Admission"
+msgstr ""
+
+#: app/templates/admissions.html:54
+msgid "Completed !"
+msgstr ""
+
+#: app/templates/admissions.html:62
+msgid "Add Class"
+msgstr ""
+
+#: app/templates/admissions.html:117
+msgid "Students"
+msgstr ""
+
+#: app/templates/admissions.html:135
+msgid "Class Teacher"
+msgstr ""
+
+#: app/templates/admissions.html:152
+msgid "There is no class registered under the admission of"
+msgstr ""
+
+#: app/templates/base.html:95
+msgid "© Copyrights"
+msgstr ""
+
+#: app/templates/base.html:95
+msgid "All rights reserved."
+msgstr ""
+
+#: app/templates/profile.html:47
+msgid "Gender:"
+msgstr ""
+
+#: app/templates/profile.html:53
+msgid "Date Of Birth:"
+msgstr ""
+
+#: app/templates/profile.html:59
+msgid "E-mail:"
+msgstr ""
+
+#: app/templates/profile.html:65
+msgid "Phone:"
+msgstr ""
+
+#: app/templates/profile.html:71
+msgid "Admission Date:"
+msgstr ""
+
+#: app/templates/profile.html:77
+msgid "Class:"
+msgstr ""
+
+#: app/templates/profile.html:83
+msgid "Roll:"
+msgstr ""
+
+#: app/templates/profile.html:88
+msgid "TSC No:"
+msgstr ""
+
+#: app/templates/profile.html:112
+msgid "Subjects I Teach."
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:111 app/templates/profile.html:112
+msgid "Subjects Taught"
+msgstr ""
+
+#: app/templates/profile.html:118
+msgid "CBA"
+msgstr ""
+
+#: app/templates/profile.html:122
+msgid "Settings"
+msgstr ""
+
+#: app/templates/profile.html:141
+msgid "I have"
+msgstr ""
+
+#: app/templates/profile.html:141
+msgid " has"
+msgstr ""
+
+#: app/templates/profile.html:141
+msgid "no subject specification."
+msgstr ""
+
+#: app/templates/profile.html:151
+msgid "CBA History"
+msgstr ""
+
+#: app/templates/profile.html:160
+msgid "term"
+msgstr ""
+
+#: app/templates/profile.html:160
+msgid "results"
+msgstr ""
+
+#: app/templates/profile.html:170
+msgid "There are no entries at the moment."
+msgstr ""
+
+#: app/templates/profile.html:184
+msgid "Subjects Enrolled"
+msgstr ""
+
+#: app/templates/forms/add_admission.html:6
+msgid "Add New Admission"
+msgstr ""
+
+#: app/templates/forms/add_admission.html:25
+#: app/templates/forms/add_classes.html:26
+#: app/templates/forms/add_document_category.html:29
+#: app/templates/forms/add_gender.html:33
+#: app/templates/forms/add_parent.html:32
+#: app/templates/forms/add_school.html:82
+#: app/templates/forms/add_school_ownership.html:28
+#: app/templates/forms/add_stream.html:28
+#: app/templates/forms/add_student.html:174
+#: app/templates/forms/add_subject.html:34
+#: app/templates/forms/add_teacher.html:136
+#: app/templates/forms/add_term.html:35
+msgid "Save"
+msgstr ""
+
+#: app/templates/forms/add_admission.html:26
+#: app/templates/forms/add_classes.html:27
+#: app/templates/forms/add_document_category.html:30
+#: app/templates/forms/add_gender.html:34
+#: app/templates/forms/add_parent.html:33
+#: app/templates/forms/add_school.html:83
+#: app/templates/forms/add_school_ownership.html:29
+#: app/templates/forms/add_stream.html:29
+#: app/templates/forms/add_student.html:173
+#: app/templates/forms/add_subject.html:35
+#: app/templates/forms/add_teacher.html:135
+#: app/templates/forms/add_term.html:36
+msgid "Reset"
+msgstr ""
+
+#: app/templates/forms/add_classes.html:5
+msgid "Add New Class"
+msgstr ""
+
+#: app/templates/forms/add_document_category.html:7
+msgid "Add New Document Category"
+msgstr ""
+
+#: app/templates/forms/add_gender.html:8
+msgid "Add New Gender"
+msgstr ""
+
+#: app/templates/forms/add_parent.html:4
+msgid "Add New Parents"
+msgstr ""
+
+#: app/templates/forms/add_school.html:8
+msgid "Add New School"
+msgstr ""
+
+#: app/templates/forms/add_school.html:23
+msgid "School Identity"
+msgstr ""
+
+#: app/templates/forms/add_school.html:41
+msgid "Address"
+msgstr ""
+
+#: app/templates/forms/add_school.html:59
+msgid "About"
+msgstr ""
+
+#: app/templates/forms/add_school.html:68
+msgid "Authentication"
+msgstr ""
+
+#: app/templates/forms/add_school_ownership.html:7
+msgid "Add New School Ownership Status"
+msgstr ""
+
+#: app/templates/forms/add_stream.html:7
+msgid "Add New Stream"
+msgstr ""
+
+#: app/templates/forms/add_student.html:7
+msgid "Add New Student"
+msgstr ""
+
+#: app/templates/forms/add_student.html:38
+#: app/templates/forms/add_student.html:113
+#: app/templates/forms/add_teacher.html:36
+msgid "Bio Data"
+msgstr ""
+
+#: app/templates/forms/add_student.html:62
+msgid "Admission Particulars"
+msgstr ""
+
+#: app/templates/forms/add_student.html:98
+msgid "Subject Selection"
+msgstr ""
+
+#: app/templates/forms/add_student.html:101
+msgid "Parenting"
+msgstr ""
+
+#: app/templates/forms/add_student.html:104
+msgid "Student Documents"
+msgstr ""
+
+#: app/templates/forms/add_student.html:129
+#: app/templates/forms/add_teacher.html:57
+msgid "Contact Info"
+msgstr ""
+
+#: app/templates/forms/add_student.html:142
+#: app/templates/forms/add_teacher.html:80
+msgid "Portal Security"
+msgstr ""
+
+#: app/templates/forms/add_subject.html:9
+msgid "Add New Subject"
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:7
+msgid "Add New Teacher"
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:70
+msgid "TSC Particulars"
+msgstr ""
+
+#: app/templates/forms/add_teacher.html:114
+msgid "Classes Assigned"
+msgstr ""
+
+#: app/templates/forms/add_term.html:7
+msgid "Add New Term"
+msgstr ""
+
+#: app/templates/school_templates/base.html:10
+msgid "Login."
+msgstr ""
+
+#: app/templates/school_templates/base.html:95
+msgid "© Copyrights "
+msgstr ""
+

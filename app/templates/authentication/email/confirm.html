@@ -1,0 +1,14 @@
+{{ _('Dear') }} <b>{% if user.type == 'school' %}{{ user.name }}{% else %}{{ user.first_name }} {{ user.last_name }}{% endif %}</b>,
+<p>
+    {{ _('Welcome to <b>brainy</b>!') }}
+    <br>{{ _('To confirm your account please') }} <a href="https://f12b-197-237-76-219.ngrok.io{{ url_for('auth.confirm', token=token, _external=True) }}">{{ _('click here') }}</a>.
+    <br>{{ _('Alternatively, you can paste the following link in your browser\'s address bar:') }}
+    <br>{{ url_for('auth.confirm', token=token, _external=True) }}
+</p>
+<p>
+    {{ _('Sincerely') }},
+    <br>{{ _('The Brainy Team') }}
+</p>
+<p>
+    <small>{{ _('Note: replies to this email address are not monitored.') }}</small>
+</p>
